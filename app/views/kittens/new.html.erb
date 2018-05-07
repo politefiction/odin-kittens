@@ -1,4 +1,7 @@
 <% title "Add a Kitten" %>
+<% provide(:button_text, "Add that cat!") %>
 
-<h1>Kittens#new</h1>
-<p>Find me in app/views/kittens/new.html.erb</p>
+<h1>Add a New Kitten</h1>
+<p>Enter kitten credentials below:</p>
+
+<%= render 'shared/form' %>

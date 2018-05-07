@@ -1,2 +1,7 @@
-<h1>Kittens#edit</h1>
-<p>Find me in app/views/kittens/edit.html.erb</p>
+<% title "Edit a Kitten" %>
+<% provide(:button_text, "Save that cat!") %>
+
+<h1>Edit a Kitten</h1>
+
+<%= render 'shared/form' %>
+<%= link_to "Delete Kitten", kitten_path(@kitten), method: :delete, data: { confirm: "Delete! Really?" } %>
