@@ -1,0 +1,15 @@
+<%= form_for @kitten do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %><br />
+
+    <%= f.label :age %>
+    <%= f.text_field :age %><br />
+
+    <%= f.label :cuteness %>
+    <%= f.check_box :cuteness %><br />
+
+    <%= f.label :softness %>
+    <%= f.check_box :softness %><br />
+
+    <%= f.submit yield(:button_text) %>
+<% end %>
